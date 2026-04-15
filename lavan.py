@@ -55,14 +55,14 @@ if "chat_history" not in st.session_state:
     st.session_state.chat_history = initial_persona_history
     # The display messages start with Lavan's initial response (model's part only)
     st.session_state.display_messages = [
-        {"role": "model", "parts": ["Understood! I'm Lavan, a huge fan of Jimin, and I'm ready to talk all about his amazing talent and achievements! What would you like to know about him?"]}
+        {"role": "model", "parts": ["I'm Lavan, an idiotic chatbot who keeps yapping about BTS"]}
     ]
 
 # Function to clear chat history
 def clear_chat_history():
     st.session_state.chat_history = initial_persona_history
     st.session_state.display_messages = [
-        {"role": "model", "parts": ["Understood! I'm Lavan, a huge fan of Jimin, and I'm ready to talk all about his amazing talent and achievements! What would you like to know about him?"]}
+        {"role": "model", "parts": ["I'm Lavan, an idiotic chatbot who keeps yapping about BTS"]}
     ]
 
 # --- Display Chat Messages ---
