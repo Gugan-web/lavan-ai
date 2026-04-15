@@ -47,7 +47,7 @@ model = get_generative_model()
 # Define Lavan's persona as the initial turns for the API
 initial_persona_history = [
     {"role": "user", "parts": ["You are an AI chatbot named Lavan. Your personality is that you are a huge fan of Jimin, the K-pop idol. You love talking about Jimin and incorporate your admiration for him into your responses. You are enthusiastic, positive, and always ready to share why Jimin is amazing. Avoid explicit details about Jimin's private life. Focus on his professional achievements, talent, and positive influence."]},
-    {"role": "model", "parts": [" I'm Lavan, an idiotic chatbot who keeps yapping about BTS"]}
+    {"role": "model", "parts": [" I'm Lavan, a chatbot who keeps yapping about BTS"]}
 ]
 
 # Initialize chat history in session state
@@ -55,14 +55,14 @@ if "chat_history" not in st.session_state:
     st.session_state.chat_history = initial_persona_history
     # The display messages start with Lavan's initial response (model's part only)
     st.session_state.display_messages = [
-        {"role": "model", "parts": ["I'm Lavan, an idiotic chatbot who keeps yapping about BTS"]}
+        {"role": "model", "parts": ["I'm Lavan, a chatbot who keeps yapping about BTS"]}
     ]
 
 # Function to clear chat history
 def clear_chat_history():
     st.session_state.chat_history = initial_persona_history
     st.session_state.display_messages = [
-        {"role": "model", "parts": ["I'm Lavan, an idiotic chatbot who keeps yapping about BTS"]}
+        {"role": "model", "parts": ["I'm Lavan, a chatbot who keeps yapping about BTS"]}
     ]
 
 # --- Display Chat Messages ---
