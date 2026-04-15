@@ -3,19 +3,19 @@ import google.generativeai as genai
 import os
 
 # --- Streamlit Page Configuration ---
-st.set_page_config(page_title="Lavan - Jimin Fan Chatbot", page_icon="🎤")
-st.title("💜 Lavan - Your Jimin Fan Chatbot 💜")
+st.set_page_config(page_title="Lavan Chatbot", page_icon="🎤")
+st.title("💜 Lavan Chatbot 💜")
 
 # --- Sidebar for Info ---
 with st.sidebar:
     st.header("About Lavan")
-    st.write("Hi there! I'm Lavan, an AI chatbot created to share my immense admiration for Jimin, the incredible K-pop idol from BTS. I love talking about his talent, achievements, and positive influence. Ask me anything about him!")
+    st.write("Hi there! I'm Lavan, an AI chatbot.")
     st.markdown("--- ")
     st.caption("Powered by Google Gemini")
 
 # Optimized introductory message
-st.markdown("### Let's talk about Jimin! ✨")
-st.markdown("As Lavan, Jimin's biggest fan, I'm thrilled to chat about his incredible talent, achievements, and everything that makes him so special. Ask me anything!")
+st.markdown("### Let's talk! ✨")
+
 
 # --- API Key Setup ---
 # In Streamlit Cloud, you would add your GOOGLE_API_KEY to your app's secrets.
