@@ -4,7 +4,7 @@ import os
 
 # --- Streamlit Page Configuration ---
 st.set_page_config(page_title="Lavan Chatbot", page_icon="🎤")
-st.title("💜 Lavan Chatbot")
+st.title("💜Lavan Chatbot")
 
 # --- Sidebar for Info ---
 with st.sidebar:
