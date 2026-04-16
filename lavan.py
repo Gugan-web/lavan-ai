@@ -1,3 +1,5 @@
+#This is an experimental AI chatbot which will later be deployed with custom UI. 
+
 import streamlit as st
 import google.generativeai as genai
 import os
